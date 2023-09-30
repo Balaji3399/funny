@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer with Video</title>
+
+    <style>
+      body, html {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+      }
+      
+      #myVideo {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 11;
+      }
+
+      #main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+  </style>
+</head>
+<body>
+  <center>
+  <div id="main">
+    <h1><em>Hi , Welcome</em></h1>
+    <h1></h1>
+    <input type="text" id="input">
+    <button id="submit">Click Me</button>
+  </div>
+</center>
+
+  <h1 style="display: none;"><em><strong>Hacked........</strong></em></h1>
+    <!-- Add a video element with controls initially hidden -->
+    <video id="myVideo" style="display: none">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script src="index.js"></script>
+</body>
+</html>
